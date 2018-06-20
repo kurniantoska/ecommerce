@@ -1,0 +1,14 @@
+{% if messages %}
+    {% if confirm_message is None %}
+        <div class="alert alert-danger" role="alert">
+        <ul class="messages">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        </div>
+    {% endif %}
+{% endif %}

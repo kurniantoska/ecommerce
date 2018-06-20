@@ -1,0 +1,10 @@
+li.nav-item.dropdown.show > div > a:hover { background-color: #ff6635; }
+li.nav-item a:hover {background-color: #28a745;}
+
+body .container {
+    padding: 20px 15px 0;
+}
+
+div.col-md-4 {
+    padding: 20px 15px 0;
+}
